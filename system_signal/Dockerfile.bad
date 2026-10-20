@@ -1,0 +1,7 @@
+FROM golang:1.27-bookworm
+
+WORKDIR /app
+
+COPY . . 
+
+CMD ["make", "service-run"]
